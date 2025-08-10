@@ -1,0 +1,71 @@
+erDiagram
+
+    image {
+        uuid id PK
+        string imageURL
+    }
+
+    painting {
+        uuid id PK
+        uuid imageId FK
+        string title
+        float width
+        float height
+        string description
+        int views
+        timestamp date
+    }
+
+    photo {
+        uuid id PK
+        uuid imageId FK
+        string title
+        float width
+        float height
+        string description
+        int views
+        timestamp date
+    }
+
+
+    clothing {
+        uuid id PK
+        uuid imageId FK
+        string name
+        string size
+        float price
+        string description
+        string vintedURL
+        int views
+        boolean isAvailable
+        timestamp date
+    }
+
+
+
+    sales {
+        uuid id PK
+        uuid itemId FK
+        uuid buyerId FK
+        string itemType
+        timestamp soldAt
+
+    }
+
+    buyer {
+        uuid id PK
+        string name
+        string email
+        string address
+    }
+
+
+
+    sales }o--|| painting : "sold"
+    sales }o--|| photo : "sold"
+    sales }o--|| clothing : "sold"
+
+    sales }o--|| buyer : "made by"
+    painting ||--|| image : "has"
+    photo ||--|| image : "has"
+    clothing ||--o{ image : "has"

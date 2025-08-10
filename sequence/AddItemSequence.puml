@@ -1,0 +1,37 @@
+@startuml
+actor Admin
+
+participant AdminApplication
+control Controller
+entity ImageService
+entity ItemService
+database Firestore
+
+== Form Submission ==
+
+Admin --> AdminApplication : Fill out item form (includes image URL)
+AdminApplication --> Controller : Submit form data
+
+== Validation ==
+
+Controller --> Controller : Validate form fields
+Controller --> Controller : Determine item type (painting, photo...)
+
+== Image Creation ==
+
+Controller --> ImageService : Create image entry
+ImageService --> Firestore : Save image
+Firestore --> ImageService : Return image ID
+
+== Item Creation ==
+
+Controller --> ItemService : Create item with image ID
+ItemService --> Firestore : Save item in specific collection
+Firestore --> ItemService : Confirm item creation
+
+== Final Feedback ==
+
+ItemService --> Controller : Item created successfully
+Controller --> AdminApplication : Success message shown
+
+@enduml

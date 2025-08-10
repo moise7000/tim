@@ -1,0 +1,39 @@
+@startuml
+actor Admin
+
+participant AdminApplication
+control Controller
+entity ItemService
+entity ImageService
+database Firestore
+
+== Deletion Request ==
+
+Admin --> AdminApplication : Click "Delete" on item
+AdminApplication --> Controller : Request item deletion (with item ID and type)
+
+== Get Item and Image ==
+
+Controller --> Controller : Determine item type
+Controller --> ItemService : Get item by ID
+ItemService --> Firestore : Fetch item document
+Firestore --> ItemService : Return item (with image ID)
+
+== Delete Item ==
+
+Controller --> ItemService : Delete item
+ItemService --> Firestore : Delete item document
+Firestore --> ItemService : Confirm deletion
+
+== Delete Image ==
+
+Controller --> ImageService : Delete associated image
+ImageService --> Firestore : Delete image document
+Firestore --> ImageService : Confirm deletion
+
+== Final Feedback ==
+
+ImageService --> Controller : Image deleted
+Controller --> AdminApplication : Success message shown
+
+@enduml

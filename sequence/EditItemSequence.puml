@@ -1,0 +1,40 @@
+@startuml
+actor Admin
+
+participant AdminApplication
+control Controller
+entity ItemService
+entity ImageService
+database Firestore
+
+== Form Submission ==
+
+Admin --> AdminApplication : Open edit form (existing item)
+Admin --> AdminApplication : Modify fields
+AdminApplication --> Controller : Submit updated item data
+
+== Validation ==
+
+Controller --> Controller : Validate updated data
+Controller --> Controller : Determine item type
+
+== Update Image if Needed ==
+
+alt Image changed
+    Controller --> ImageService : Update image entry
+    ImageService --> Firestore : Update image document
+    Firestore --> ImageService : Confirm update
+end
+
+== Update Item ==
+
+Controller --> ItemService : Update item with new data
+ItemService --> Firestore : Update item document
+Firestore --> ItemService : Confirm update
+
+== Final Feedback ==
+
+ItemService --> Controller : Item updated
+Controller --> AdminApplication : Success message shown
+
+@enduml
