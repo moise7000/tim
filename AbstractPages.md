@@ -31,6 +31,6 @@
 | Section            | Description                                                                                               |
 |--------------------|-----------------------------------------------------------------------------------------------------------|
 | Topic name         | Contact                                                                                                   |
-| Content components | -Navigation bar <br/> - Icon <br/> - Email <br/> - Instagram <br/> - Vinted                               |
+| Content components | - Navigation bar <br/> - Icon <br/> - Email <br/> - Instagram <br/> - Vinted                              |
 | Links              | Links to external website                                                                                 |
 | Orientation Info   | - Breadcrumbs: Home > Contact <br/> - Page title: "Contact" <br/> - Highlight "Contact" in navigation bar |
