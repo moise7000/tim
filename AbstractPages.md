@@ -6,15 +6,15 @@
 |--------------------|--------------------------------------------------------------------------------------------|
 | Topic name         | Home                                                                                       |
 | Content components | - Navigation bar <br/> - Paint Grid <br/> - Icon                                           |
-| Links              | Home → Painting <br/> Home → Photos <br/> Home → Contact <br/>  Painting Grid → Painting   |
+| Links              | Home → Paintings <br/> Home → Photos <br/> Home → Contact <br/>  Paintings Grid → Paintings   |
 | Orientation Info   | - Breadcrumbs: None <br/> - Page title: “Home” <br/> - Highlight “Home” in navigation menu |
 
-## Painting Page
+## Paintings Page
 | Section            | Description                                                                                                     |
 |--------------------|-----------------------------------------------------------------------------------------------------------------|
-| Topic name         | Painting                                                                                                        |
+| Topic name         | Paintings                                                                                                        |
 | Content components | List of buttons (All, 2025, 2024 ...) <br/> - Grid of photos with info (title, dimension date, description ...) |
-| Links              | Painting → Paint                                                                                                |
+| Links              | Paintings → Paint                                                                                                |
 | Orientation Info   | - Breadcrumbs: Home > Photos <br/> - Page title: "Photos" <br/> - Highlight "Photos" in navigation bar          |
 
 ## Photos Page
