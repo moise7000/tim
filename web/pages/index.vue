@@ -19,10 +19,7 @@ const featured = [
 
 <template>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h2>Discover the Purrfect Companion!</h2>
-  </section>
+
 
   <!-- Main Content Section -->
   <section class="main-content">
