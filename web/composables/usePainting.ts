@@ -13,7 +13,7 @@ export const usePaintings = () => {
 
     // Récupérer l'URL de l'image
     const getPaintingImageUrl = (imageId: string): string => {
-        return `/images/paintings/${imageId}.jpg`
+        return `/images/paintings/${imageId}.png`
     }
 
     // Récupérer les paintings populaires (tri par vues)

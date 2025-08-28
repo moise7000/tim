@@ -14,7 +14,7 @@ export interface Painting {
 export const fakePaintings: Painting[] = [
     {
         id: "550e8400-e29b-41d4-a716-446655440001",
-        imageId: "img_001_starry_night",
+        imageId: "1",
         title: "Nuit étoilée sur la Seine",
         width: 73.7,
         height: 92.1,
@@ -24,7 +24,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440002",
-        imageId: "img_002_autumn_forest",
+        imageId: "2",
         title: "Forêt d'automne",
         width: 60.0,
         height: 80.0,
@@ -34,7 +34,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440003",
-        imageId: "img_003_ocean_waves",
+        imageId: "3",
         title: "Vagues éternelles",
         width: 100.0,
         height: 70.0,
@@ -44,7 +44,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440004",
-        imageId: "img_004_mountain_sunrise",
+        imageId: "4",
         title: "Lever de soleil montagnard",
         width: 85.5,
         height: 65.3,
@@ -54,7 +54,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440005",
-        imageId: "img_005_city_rain",
+        imageId: "5",
         title: "Pluie urbaine",
         width: 50.0,
         height: 70.0,
@@ -64,7 +64,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440006",
-        imageId: "img_006_desert_sunset",
+        imageId: "6",
         title: "Coucher de soleil désertique",
         width: 120.0,
         height: 80.0,
@@ -74,7 +74,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440007",
-        imageId: "img_007_flower_field",
+        imageId: "7",
         title: "Champ de coquelicots",
         width: 90.0,
         height: 60.0,
@@ -84,7 +84,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440008",
-        imageId: "img_008_winter_lake",
+        imageId: "8",
         title: "Lac gelé",
         width: 75.0,
         height: 55.0,
@@ -94,7 +94,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440009",
-        imageId: "img_009_cherry_blossoms",
+        imageId: "9",
         title: "Cerisiers en fleurs",
         width: 65.0,
         height: 85.0,
@@ -104,7 +104,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440010",
-        imageId: "img_010_lighthouse_storm",
+        imageId: "4",
         title: "Phare dans la tempête",
         width: 70.0,
         height: 100.0,
@@ -114,7 +114,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440011",
-        imageId: "img_011_abstract_colors",
+        imageId: "5",
         title: "Symphonie colorée",
         width: 80.0,
         height: 80.0,
@@ -124,7 +124,7 @@ export const fakePaintings: Painting[] = [
     },
     {
         id: "550e8400-e29b-41d4-a716-446655440012",
-        imageId: "img_012_old_bridge",
+        imageId: "6",
         title: "Pont de pierre ancien",
         width: 110.0,
         height: 65.0,
@@ -132,36 +132,7 @@ export const fakePaintings: Painting[] = [
         views: 3567,
         date: "2024-01-30T12:35:00.000Z"
     },
-    {
-        id: "550e8400-e29b-41d4-a716-446655440013",
-        imageId: "img_013_lavender_fields",
-        title: "Champs de lavande",
-        width: 95.0,
-        height: 70.0,
-        description: "Les rangées violettes de lavande s'étendent sous le soleil provençal. Le parfum enivrant et les couleurs douces évoquent la sérénité de la Provence.",
-        views: 4823,
-        date: "2024-03-05T14:20:00.000Z"
-    },
-    {
-        id: "550e8400-e29b-41d4-a716-446655440014",
-        imageId: "img_014_misty_morning",
-        title: "Brume matinale",
-        width: 85.0,
-        height: 60.0,
-        description: "La brume matinale enveloppe délicatement la campagne. Les premiers rayons du soleil percent le voile mystérieux, révélant lentement le paysage.",
-        views: 2156,
-        date: "2024-04-12T06:45:00.000Z"
-    },
-    {
-        id: "550e8400-e29b-41d4-a716-446655440015",
-        imageId: "img_015_waterfall",
-        title: "Cascade sauvage",
-        width: 60.0,
-        height: 90.0,
-        description: "Une cascade puissante dévalant les rochers moussus. L'eau cristalline chante sa mélodie éternelle dans l'écrin verdoyant de la forêt primitive.",
-        views: 3798,
-        date: "2024-02-22T10:15:00.000Z"
-    }
+
 ];
 
 // Fonction utilitaire pour générer des UUIDs (pour ajouter plus de données)
